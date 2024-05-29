@@ -1,0 +1,42 @@
+{
+    "dashboard": {
+        "id": null,
+        "title": "Unified Alerts Dashboard",
+        "tags": [],
+        "timezone": "browser",
+        "schemaVersion": 16,
+        "version": 0,
+        "panels": [
+            {
+                "type": "table",
+                "title": "Alerts",
+                "gridPos": {
+                    "x": 0,
+                    "y": 0,
+                    "w": 24,
+                    "h": 8
+                },
+                "options": {
+                    "data": {
+                        "columns": [
+                            {"text": "Alert Name", "value": "alertname"},
+                            {"text": "Severity", "value": "severity"},
+                            {"text": "Description", "value": "description"},
+                            {"text": "Starts At", "value": "startsAt"},
+                            {"text": "Ends At", "value": "endsAt"},
+                            {"text": "Labels", "value": "labels"},
+                            {"text": "State", "value": "state"},
+                            {"text": "Workspace", "value": "workspace"}
+                        ],
+                        "rows": [
+                        // Add alert data here
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "folderId": 0,
+    "message": "Unified Alerts Dashboard created using API",
+    "overwrite": false
+}
