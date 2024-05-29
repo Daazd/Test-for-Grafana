@@ -2,7 +2,7 @@ import requests
 import json 
 import time
 
-# This is our workspaces in Grafana and we need to generate keys for each
+# This is our workspaces in Grafana and we need to generate keys for each workspace
 workspaces = [
     {"url": "http://grafana-workspace.us-east-1.amazonaws.com/", "api_key": "API_KEY_1"},
     {"url": "http://grafana-workspace.us-east-1.amazonaws.com/", "api_key": "API_KEY_2"},
@@ -10,6 +10,7 @@ workspaces = [
 
 def format_alerts_for_dashboard(alerts):
     # This function will format the alerts in a way that we can display them in a dashboard
+    # Based on our keys in the alerts the alert keys will change accordingly
     rows = []
     for alert in alerts:
         rows.append([
