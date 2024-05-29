@@ -51,7 +51,8 @@ def update_dashboard_with_alerts(alerts):
         json.dump(dashboard, file, indent=2)
         
     return dashboard
-    
+
+# Push the updated dashboard to Grafana    
 def push_dashboard_to_grafana(dashboard_json):
     url = "http://grafana-workspace.us-east-1.amazonaws.com/api/dashboards/db"
     headers = {
