@@ -44,7 +44,7 @@ def update_dashboard_with_alerts(alerts):
         dashboard = json.load(file)
     
 # Update the dashboard with the alerts
-    dashboard["dashboard"]["panels"][0]["options"]["data"]["rows"] = format_alerts_for_dashboard(all_alerts)
+    dashboard["dashboard"]["panels"][0]["options"]["data"]["rows"] = format_alerts_for_dashboard(alerts)
 
 # Write updated dashboard JSON
     with open("dashboard_with_alerts.json", "w") as file:
